@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+ <html lang="fa">
+ <head>
+     <meta charset="UTF-8">
+     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <title>My Portfolio</title>
+     <link rel="stylesheet" href="css/style.css">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+     <style>
+         /* Snowflakes styles */
+         .snowflakes {
+             position: absolute;
+             top: 0;
+             left: 0;
+             width: 100%;
+             height: 100%;
+             overflow: hidden;
+             pointer-events: none;
+             z-index: 1; 
+         }
+
+         .snowflake {
+             position: absolute;
+            font-size: 30px;
+             animation: snowfall 5s linear infinite;
+         }
+
+         .snowflake:nth-child(1) {
+             left: 10%;
+             animation-delay: 0s;
+         }
+
+         .snowflake:nth-child(2) {
+             left: 20%;
+             animation-delay: 1s;
+         }
+
+         .snowflake:nth-child(3) {
+             left: 30%;
+             animation-delay: 2s;
+         }
+
+         .snowflake:nth-child(4) {
+             left: 40%;
+             animation-delay: 3s;
+         }
+
+         .snowflake:nth-child(5) {
+             left: 50%;
+             animation-delay: 4s;
+         }
+
+         .snowflake:nth-child(6) {
+             left: 60%;
+             animation-delay: 1s;
+         }
+
+         .snowflake:nth-child(7) {
+             left: 70%;
+             animation-delay: 2s;
+         }
+
+         .snowflake:nth-child(8) {
+             left: 80%;
+             animation-delay: 3s;
+         }
+
+         .snowflake:nth-child(9) {
+             left: 90%;
+             animation-delay: 4s;
+         }
+
+         @keyframes snowfall {
+             0% {
+                 transform: translateY(0);
+                 opacity: 0;
+             }
+
+             10% {
+                 opacity: 1;
+             }
+
+             100% {
+                 transform: translateY(100vh);
+                 opacity: 0;
+             }
+         }
+     </style>
+ </head>
+ <body>
+
+     <input type="checkbox" id="menu-toggle" class="menu-toggle-checkbox">
+
+     <label for="menu-toggle" class="hamburger-menu">
+         <div class="bar"></div>
+         <div class="bar"></div>
+         <div class="bar"></div>
+     </label>
+
+     <header class="sidebar-header">
+         <nav class="main-nav">
+             <ul class="nav-links">
+                 <li><label for="menu-toggle" class="close-menu">×</label></li>
+                 <li><a href="#home"><i class="fas fa-home"></i> Home</a></li>
+                 <li><a href="#about"><i class="fas fa-user"></i> About Me</a></li>
+                 <li><a href="#education"><i class="fas fa-graduation-cap"></i> Education</a></li>
+                 <li><a href="#portfolio"><i class="fas fa-briefcase"></i> Projects</a></li>
+                 <li><a href="#drawings"><i class="fas fa-paint-brush"></i> Drawings</a></li>
+                 <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+             </ul>
+         </nav>
+     </header>
+
+     <main class="page-content">
+         <section id="home" class="hero-section">
+             <div class="snowflakes">
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">☃</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 <div class="snowflake">❄</div>
+                 
+             </div>
+             <div class="hero-content">
+                 <h1 class="welcome-text">Welcome!</h1>
+                 <p>I'm Mahsa Ansari, a student in the feild of front-end. Welcome to my personal website.</p>
+             </div>
+         </section>
+
+         <section id="about" class="section">
+             <h2 class="section-title">About Me</h2>
+             <div class="about-content">
+                 <p>
+                     "Hi there! I'm Mahsa Ansari, and I'm thrilled to be two months into my journey in the world of computers, currently diving deep into front-end development. When I'm not coding, you'll find me reading, exercising, or painting.
+                      I have an incredible fascination with the moon,seriously:) my profiles and even my room are filled with moon-themed everything!
+                      I hope you enjoy exploring my website!"
+                 </p>
+             </div>
+         </section>
+
+         <section id="education" class="section">
+             <h2 class="section-title">Education</h2>
+             <div class="education-timeline">
+                 <div class="timeline-item">
+                     <div class="timeline-dot"></div>
+                     <div class="timeline-content">
+                         <h3>High School Diploma − Experimental Sciences  </h3>
+                         <p>Mehregan High School, 2022−2024</p>
+                         <p>.</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <section id="portfolio" class="section">
+             <h2 class="section-title">Projects</h2>
+             <div class="projects-grid">
+                 <a href="https://mahi200422.github.io/Afghan-Proverbs/" target="_blank" class="project-item">
+                     <img src="images/project1.jpg.png" alt="Project 1 Image">
+                     <div class="project-details">
+                         <h3>Treasury of Wisdom: Afghan Proverbs</h3>
+                         <p>
+                         "Welcome to the Afghan Proverbs website! This is a gateway to the rich world of Afghan culture and wisdom. We've gathered an unparalleled collection of ancient and beautiful Afghan proverbs to introduce you to the linguistic and traditional treasures of this land.<br> Each proverb holds a story of life, experience, and profound wisdom within its heart. We hope you enjoy discovering these pearls of language and find them useful in your daily life and conversations.".</p>
+         <span class="view-project">View Project</span>
+                     </div>
+                 </a>
+                 <a href="https://mahi200422.github.io/Project/" target="_blank" class="project-item">
+                     <img src="images/project2.jpg.png" alt="Project 2 Image">
+                     <div class="project-details">
+                         <span class="view-project">View Project</span>
+                     </div>
+                 </a>
+             </div>
+         </section>
+
+         <section id="drawings" class="section">
+             <h2 class="section-title">My Drawings</h2>
+             <div class="drawings-gallery">
+                 <div class="drawing-item">
+                     <img src="images/drawing1.jpg" alt="Drawing 1">
+                     <div class="drawing-overlay">
+                         <p>I tried to capture the intesity and majesty of an eagle in this drawing.Let me know what you think!</p>
+                     </div>
+                 </div>
+                 <div class="drawing-item">
+                     <img src="images/drawing2.jpg" alt="Drawing 2">
+                     <div class="drawing-overlay">
+                         <p>Working on the facial details of Sukuna in this drawing.</p>
+                     </div>
+                 </div>
+                 <div class="drawing-item">
+                     <img src="images/drawing3.jpg" alt="Drawing 3">
+                     <div class="drawing-overlay">
+                         <p>Another drawing of Sukuna.</p>
+                     </div>
+                 </div>
+             </div>
+         </section>
+
+         <div class="container">
+             <h2>Contact with us</h2>
+             <form action="YOUR_SERVER_SCRIPT_URL" method="POST">
+                 <div class="form-group">
+                     <label for="name">Name:</label>
+                     <input type="text" id="name" name="user_name" required>
+                 </div>
+                 <div class="form-group">
+                     <label for="email">Email:</label>
+                     <input type="email" id="email" name="user_email" required>
+                 </div>
+                 <div class="form-group">
+                     <label for="message">Massege:</label>
+                     <textarea id="message" name="user_message" required></textarea>
+                 </div>
+                 <button type="submit">send</button>
+             </form>
+         </div>
+
+         <section id="contact" class="section">
+             <h2 class="section-title">Contact Me</h2>
+             <div class="contact-links">
+                 <a href="mailto:mahsaansari138@gmail.com" class="contact-icon" target="_blank">
+                     <i class="fas fa-envelope"></i>
+                     <span>Email</span>
+                 </a>
+                 <a href="https://t.me/mahi200422" class="contact-icon" target="_blank">
+                     <i class="fab fa-telegram-plane"></i>
+                     <span>Telegram</span>
+                 </a>
+                 <a href="https://www.linkedin.com/in/mahsa-ansari-212519366?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" class="contact-icon" target="_blank">
+                     <i class="fab fa-linkedin"></i>
+                     <span>LinkedIn</span>
+                 </a>
+                 <a href="https://github.com/mahi200422" class="contact-icon" target="_blank">
+                     <i class="fab fa-github"></i>
+                     <span>GitHub</span>
+                 </a>
+             </div>
+             <p class="contact-note">For more details, feel free to contact me via the messaging apps above.</p>
+         </section>
+
+         <footer class="main-footer">
+             <p>&copy; 2024 Mahsa Ansari. All rights reserved.</p>
+         </footer>
+     </main>
+
+     </body>
+ </html>
